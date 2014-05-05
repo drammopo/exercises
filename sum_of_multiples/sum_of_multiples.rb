@@ -4,12 +4,12 @@ class SumOfMultiples
     @upper_bound = upper_bound
   end
 
-  def multiples
+  def check
     numbers = 1.upto(@upper_bound)
     result = []
 
     numbers.each do |number|
-      result << multiple(number) 
+      result << multiple(number)
     end
     result.compact
   end
